@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    margin:0px;
+    color:rgb(105, 125, 143)
+  }
+ .header{
+    background:rgb(72, 0, 255);
+    height:50px;
+    display:flex; 
+    align-items:center;
+    justify-content: center;
+    color:aliceblue; 
+    padding:0 20px; 
+ }
+ h1{
+    margin:0px;
+    font-size: 24px;
+    flex:1;
+    text-align: center;
+ }
+ h2{
+    margin:0px; 
+    color: black;
+ }
+ a{
+    color:rgb(27, 27, 175);
+    text-decoration: none;
+ }
+ .content{
+    padding:20px;
+    
+ }
+.waitingcontainer{
+    display:flex;
+    flex-wrap: wrap;
+    color: black;
+    justify-content: space-between;
+}
+.waitingcontainer div{
+    width: 48%;
+    background-color: rgb(211, 214, 214);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding:20px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:480px) {
+    .waitingcontainer div{
+        width:99%; 
+    }
+}
+.waitingcontainer div p{
+    margin:0; 
+}
+.hour7{
+    color:rgb(203, 9, 9)
+}
+.hour4{
+    color:rgb(39, 126, 97)
+}
+</style> 
+<body>
+    <div class="header">
+       <h1>武漢肺炎民間資訊</h1>
+       <div>Share</div>
+    </div>
+    <div class="content">
+       <h2>急症室最長等侯時間</h2>
+       <a href="http://ha.org.hk">資料來源:醫管局</a>
+    </div>
+   <div class="waitingcontainer">
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p>&lt 1 hour</p>
+    </div>
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p>&lt 1 hour</p>
+    </div>
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p>&lt 1 hour</p>
+    </div>
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p>&lt 1 hour</p>
+    </div>
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p>&lt 2 hour</p>
+    </div>
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p class="hour4">&lt 4 hour</p>
+    </div>
+    <div>
+        <p>東涌<br>北大嶼山醫院</p>
+        <p class="hour7">&lt 7 hour</p>
+    </div>
+   </div>
+</body>
+</html>
